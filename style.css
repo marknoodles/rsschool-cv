@@ -1,0 +1,19 @@
+h1,
+p {
+    font-family: 'Times New Roman', Times, serif;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+}
+h1 {
+    text-align: center;
+}
+.avatar{
+    width: 40%;
+    float: right;
+}
+.text {
+    width: 40%;
+    margin-top: 10%;
+    margin-left: 10%;
+    padding: 2%;
+}
