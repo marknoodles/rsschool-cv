@@ -1,8 +1,13 @@
 ul, p, h1, h2 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 200%;
+    text-align: center;
 }
 
-.main {}
+body {
+    background-color: rgb(225, 225, 225);
+    padding-bottom: 100px;
+}
 
 .main-arcticle {
     display: flex;
@@ -17,6 +22,7 @@ ul, p, h1, h2 {
 .main-photo {
     display: flex;
     justify-content: center;
+    
 }
 
 .main-about {
@@ -37,6 +43,8 @@ ul, p, h1, h2 {
 .main-skills-info {
     display: flex;
     justify-content: center;
+    border-bottom: dotted;
+    border-color: white;
 }
 
 .main-codexamp {
@@ -52,21 +60,32 @@ ul, p, h1, h2 {
 .main-container {
     display: flex;
     flex-direction: row;
+    margin-bottom: 50px;
 }
 
 .main-container-info {
     display: flex;
     flex-direction: column;
     width: 30%;
+    border:black;
+    border: dotted;
+    border-color: white;
 }
 
 .main-container-skills {
     display: flex;
     flex-direction: column;
-    width: 70%
+    width: 70%;
+    border: dotted;
+    border-color: white;
+    border-left: none;
+    
 }
-
-@media (max-width: 1024px) {
+.main-hobby{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 1139px) {
     .main-container {
         flex-direction: column;
         justify-content: center;
