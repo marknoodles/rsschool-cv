@@ -1,0 +1,82 @@
+ul, p, h1, h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main {}
+
+.main-arcticle {
+    display: flex;
+    justify-content: center;
+}
+
+.main-second-arcticle {
+    display: flex;
+    justify-content: center;
+}
+
+.main-photo {
+    display: flex;
+    justify-content: center;
+}
+
+.main-about {
+    display: flex;
+    justify-content: center;
+}
+
+.main-about-info {
+    display: flex;
+    justify-content: center;
+}
+
+.main-skills {
+    display: flex;
+    justify-content: center;
+}
+
+.main-skills-info {
+    display: flex;
+    justify-content: center;
+}
+
+.main-codexamp {
+    display: flex;
+    justify-content: center;
+}
+
+.main-codexamp-img {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-container-info {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.main-container-skills {
+    display: flex;
+    flex-direction: column;
+    width: 70%
+}
+
+@media (max-width: 1024px) {
+    .main-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main-container-info {
+        width: 100%;
+        justify-content: center;
+    }
+    .main-container-skills {
+        width: 100%;
+        justify-content: center;
+    }
+}

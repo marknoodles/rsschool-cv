@@ -14,6 +14,6 @@ var isAnagram = function(test, original) {
   return normalize(test) === normalize(original);
 
 }
-6. no work expirience
+6. no work experience
 7. Courses on website: stepik.org (HTML,CSS,JS,C)
 8. B1
