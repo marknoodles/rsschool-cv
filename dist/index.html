@@ -3,13 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <title>Output Management</title>
+    
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
     <!-- <link rel="stylesheet" href="style.css"> -->
     <!-- <link rel="stylesheet" href="./style.scss"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script defer src="index.bundle.js"></script>
     <script defer src="print.bundle.js"></script>
   </head>
-  <body>
+  <body style="margin: 0">
     <!-- navbar -->
     <navbar class="navbar">
       <div class="navbar_inside-block">
@@ -31,19 +37,104 @@
     <div class="main-page">
       <div class="main-page_discover-menu">
         <div class="main-page_caption">
-          <h1>WELCOME <br/>
-            TO THE LOUVRE</h1>
-            <span class="main-page_under-caption">From the castle to the museum</span>
+          <span class="h1">
+            WELCOME <br />
+            TO THE LOUVRE
+          </span>
+          <span class="main-page_under-caption"
+            >From the castle to the museum</span
+          >
         </div>
-          <button class="main-page_button">
-            Discover the Louvre
-          </button>
+        <button class="main-page_button">Discover the Louvre</button>
       </div>
       <div class="main-page_img-side">
-        <img src="../img/1.png">
-        <div class = "main-page_shadow"></div>
+        <img src="../img/1.png" />
+        <div class="main-page_shadow"></div>
       </div>
     </div>
+    <!-- virtual tour -->
+    <div class="second-block">
+      <div class="second-block_caption">
+        <h2>VIRTUAL TOUR</h2>
+      </div>
+      <div class="second-block_picture-stand">
+        <div class="second-block_picture-stand_first-line">
+          <div class="card">
+            <img src="../img/Rectangle.jpg" />
+            <h3>ROYAL PALACE</h3>
+            <span class="card_f22">360° Virtual Tour</span>
+            <span class="card_f18">Google Street Panorama View</span>
+          </div>
+
+          <div class="card">
+            <img src="../img/Rectangle (1).jpg" />
+            <h3>DENON WING</h3>
+            <span class="card_f22">360° Virtual Tour</span>
+            <span class="card_f18">Google Street Panorama View</span>
+          </div>
+          <div class="card">
+            <img src="../img/Rectangle (2).jpg" />
+            <h3>COLONADE PERRAULT</h3>
+            <span class="card_f22">360° Virtual Tour</span>
+            <span class="card_f18">Google Street Panorama View</span>
+          </div>
+        </div>
+        <div class="second-block_picture-stand_second-line">
+          <div class="card">
+            <img src="../img/Rectangle (3).jpg" />
+            <h3>GREEK HALL</h3>
+            <span class="card_f22">360° Virtual Tour</span>
+            <span class="card_f18">Google Street Panorama View</span>
+          </div>
+          <div class="card">
+            <img src="../img/Rectangle (4).jpg" />
+            <h3>MONA LISA</h3>
+            <span class="card_f22">360° Virtual Tour</span>
+            <span class="card_f18">Google Street Panorama View</span>
+          </div>
+          <div class="card">
+            <img src="../img/Rectangle (5).jpg" />
+            <h3>NIGHT PALACE</h3>
+            <span class="card_f22">360° Virtual Tour</span>
+            <span class="card_f18">Google Street Panorama View</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- picture Explore -->
+    <div class="leftside">
+      <div class="picture-explore-block">
+        <span class="picture-explore-block_title"> PICTURE EXPLORE </span>
+        <p>
+          Las Meninas is a 1656 painting by Diego Velázquez, the leading <br />
+          artist of the Spanish Golden Age.
+        </p>
+        <p>
+          It was cleaned in 1984 to remove a
+          <mark class="yellow">"yellow veil"</mark> of dust that had <br />
+          gathered since the previous restoration in the 19th century.
+        </p>
+        <p>
+          The cleaning provoked furious protests, not because the picture had
+          <br />
+          been damaged in any way, but because it looked different.
+        </p>
+      </div>
+    </div>
+    <div class="rightside">
+      <div class="slider">
+      <div class='slider-block'>
+        <div class='img'>
+          <img src="../img/Rectangle (1).png" class="background-img">
+        </div>
+        <div class='img'>
+          <img src="../img/Rectangle.png" class="foreground-img">
+        </div>
+        <input type="range" min="1" max="100" value="50" class="slider" name='slider' id="slider">
+        <div class='slider-button'></div>
+      </div>
+    </div>
+  </div>
   </body>
-  <!-- sd;lkghsdg -->
 </html>

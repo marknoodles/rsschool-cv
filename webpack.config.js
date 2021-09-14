@@ -1,30 +1,37 @@
 const path = require('path');
+const webpack = require('webpack');
 // const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
-    mode: 'development',
-    entry: {
-        index: './src/index.js',
-        print: './src/print.js',
-      },
-      devtool: 'inline-source-map',
-      devServer: {
-        static: './dist',
-      },
-    //   plugins: [
-    //     new HtmlWebpackPlugin({
-    //       title: 'Output Management',
-    //     }),
-    //   ],
+  plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+    })
+  ],
+  mode: 'development',
+  entry: {
+    index: './src/index.js',
+    print: './src/print.js',
+  },
+  devtool: 'inline-source-map',
+  devServer: {
+    static: './dist',
+  },
+  //   plugins: [
+  //     new HtmlWebpackPlugin({
+  //       title: 'Output Management',
+  //     }),
+  //   ],
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
-        {
-            test: /\.html$/i,
-            loader: "html-loader",
-          },
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
@@ -47,7 +54,7 @@ module.exports = {
             options: {
               implementation: require.resolve("sass"),
             },
-        },
+          },
         ],
       },
     ],
